@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
+    "@astrojs/vue": "^4.5.0",
     "astro": "^4.14.5",
     "bootstrap-icons": "^1.11.3",
-    "typescript": "^5.5.4"
+    "sweetalert2": "^11.12.4",
+    "typescript": "^5.5.4",
+    "vue": "^3.4.38"
   }
 }

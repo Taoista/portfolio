@@ -1,6 +1,5 @@
 <template>
-
-    <!-- <fieldset>
+    <fieldset>
         <div class="form-field">
                 <input name="contactName" type="text" id="contactName" placeholder="Nombre" value="" minlength="2" required="">
         </div>
@@ -14,9 +13,9 @@
                 <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
         </div>                      
         <div class="form-field">
-            <button class="submitform" @click="toggleActive">Enviar</button>
+            <button class="submitform" @click="handClick">Enviar</button>
             <div id="submit-loader">
-            <div class="text-loader">Sending...</div>                             
+            <div class="text-loader">Enviando...</div>                             
                     <div class="s-loader">
                             <div class="bounce1"></div>
                             <div class="bounce2"></div>
@@ -24,33 +23,34 @@
                     </div>
                 </div>
         </div>
-        </fieldset> -->
+    </fieldset>
 
-        <button @click="handClick">testiando con vuejs</button>
 
  </template>
  
  <script lang="ts" setup>
     import { ref } from 'vue';
     import Swal from 'sweetalert2';
+    import 'sweetalert2/src/sweetalert2.scss'
 
     console.log('inciando el componente en vue js')
-    
+    // alert('hola mundo')
     const handClick = () => {
-        console.log('Hola mundo');
-        Swal.fire('Hola Mundo!', 'Este es un ejemplo de SweetAlert2', 'success');
+        console.log('Enviando dato');
+       
     };
 
-
+    
 
     console.log('terminando el componente en vue js')
     
  </script>
  
  <style scoped>
- h1 {
-   color: #42b983;
-   cursor: pointer;
- }
+ 
+ .swal2-styled {
+    padding-top: 100px !important; /* Define aquí el padding deseado */
+    padding-bottom: 100px !important; /* Define aquí el padding deseado */
+  }
  </style>
  

@@ -10,7 +10,7 @@
             <input name="contactEmail" v-model="inputPHone" type="text" id="contactEmail" placeholder="Telefono" >
         </div>
         <div class="form-field">
-              <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50"></textarea>
+              <textarea name="contactMessage" v-model="inputMessage" id="contactMessage" placeholder="message" rows="10" cols="50"></textarea>
         </div>                      
         <div class="form-field">
             <button v-if="loading == false" class="submitform" @click="sendEmail">Enviar</button>

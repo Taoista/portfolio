@@ -1,0 +1,9 @@
+.my-custom-button {
+    color: white; /* Cambia el color del texto del botón */
+    border-radius: 5px; /* Cambia el radio de las esquinas del botón */
+    font-size: 16px; /* Cambia el tamaño de la fuente del botón */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }

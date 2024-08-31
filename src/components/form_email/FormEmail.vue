@@ -1,13 +1,13 @@
 <template>
     <fieldset>
         <div class="form-field">
-                <input name="contactName" v-model="inputName" type="text" id="contactName" placeholder="Nombre" >
+                <input name="contactName" v-model="inputName" type="text" id="contactName" placeholder="Nombre" autocomplete="off">
         </div>
         <div class="form-field">
-                <input name="contactEmail" v-model="inputEmail" type="email" id="contactEmail" placeholder="Email" >
+                <input name="contactEmail" v-model="inputEmail" type="email" id="contactEmail" placeholder="Email" autocomplete="off">
         </div>
         <div class="form-field">
-            <input name="contactEmail" v-model="inputPHone" type="text" id="contactEmail" placeholder="Telefono" >
+            <input name="contactEmail" v-model="inputPHone" type="text" id="contactEmail" placeholder="Telefono" autocomplete="off">
         </div>
         <div class="form-field">
               <textarea name="contactMessage" v-model="inputMessage" id="contactMessage" placeholder="message" rows="10" cols="50"></textarea>

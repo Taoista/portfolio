@@ -76,6 +76,10 @@
             },
             // Puedes agregar otros parámetros de configuración aquí
           });
+          inputName.value = ''
+          inputEmail.value = ''
+          inputMessage.value = ''
+          inputPHone.value = ''
           return false;
         }, (error) => {
           loading.value = false;

@@ -1,0 +1,224 @@
+---
+const lista = [
+    {
+        titulo:'Win optimizer Image', 
+        desc:'software para transformasar y optimizar imagenes',
+        img: 'images/proyectos/win_optimizer_img.webp', 
+        repo:'https://github.com/Taoista/win_optimizer_img', 
+        download:"https://drive.google.com/file/d/1zBsAV7IifcQSIz56lPAMWz45tkUzpvO5/view?usp=sharing", 
+        logo:'images/proyectos/logo_win_optimizer_img.webp',
+        url:null,
+        tecnologies:[
+                'images/icons/flutter.svg',''
+            ]
+        },
+    {
+        titulo:'wolverchile.cl', 
+        desc:'Landing page respresentantes oficial en chile',
+        img: 'images/proyectos/wolverchile.webp', 
+        repo:null, 
+        download:null, 
+        logo:'images/proyectos/logo_wolverchile.webp',
+        url:'https://wolverchile.cl',
+        tecnologies:[
+            'images/icons/astro.svg',
+            'images/icons/vue.svg',
+        ]
+
+    },
+    {
+        titulo:'geoclientes', 
+        desc:'Landing page respresentantes oficial en chile',
+        img: 'images/proyectos/geo_cliente.webp', 
+        repo:null, 
+        download:null, 
+        logo:'images/proyectos/logo_geo_clientes.webp',
+        url:null,
+        tecnologies:[
+            'images/icons/flutter.svg',
+        ]
+    },
+    {
+        titulo:'Neumatruck', 
+        desc:'Ecommerce',
+        img: 'images/proyectos/neumatruck.webp', 
+        repo:null, 
+        download:null, 
+        logo:'images/proyectos/logo_neumatruck.webp',
+        url:'https://neumatruck.cl',
+        tecnologies:[
+            'images/icons/laravel.svg',
+            'images/icons/vue.svg',
+        ]
+
+    },
+];
+---
+
+<section id="portfolio">
+
+    <div class="row section-intro">
+        <div class="col-twelve">
+            <h5>Portfolio</h5>
+            <h1>Mis trabajos.</h1>
+        </div>   		
+    </div> <!-- /section-intro--> 
+
+    <ul class="cards">
+        {lista.map((data) => (
+            <li>
+                <div class="card">
+                    <img src={data.img} class="card__image" alt="" />
+                    <div class="card__overlay">
+                        <div class="card__header">
+                            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                            <img class="card__thumb" src={data.logo} alt="" />
+                            <div class="card__header-text">
+                                <h5 class="card__title">{data.titulo}</h5>            
+                                <p class="card__tecnologies">Tecnología</p>            
+                                {data.tecnologies.map((tec) => (
+                                    <img style="max-width: 22px;" src={tec} alt="">
+                                ))}
+                            </div>
+                        </div>
+                        <p class="card__description">{data.desc}</p>
+                        <p class="card__description">
+                            {data.repo != null ? ( <a href={data.repo} target="_blank"><img src="icons/github.svg" alt=""></a> ) : ('')}
+                            {data.download != null ? ( <a href={data.download} target="_blank"><img src="icons/download.svg" alt=""></a> ) : ('')}
+                            {data.url != null ? ( <a href={data.url} target="_blank"><img  style="max-width: 22px;" src="icons/url.svg" alt=""></a> ) : ('')}
+                            <a href=""><img src={data.download} alt=""></a>
+                        </p>
+                    </div>
+                </div>      
+            </li>
+        ))}
+    </ul>
+    
+</section>
+
+
+<style>
+    :root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+//   font-family: "MockFlowFont";  
+  font-size: .8em; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description, .card__tecnologies {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #313131;
+//   font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
+
+.card__tecnologies{
+    padding: 0 0 0 0;
+}
+</style>

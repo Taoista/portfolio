@@ -6,7 +6,7 @@ interface Props {
     img: string;
     repository: string | null;
     download: string | null;
-	logo: string;
+	  logo: string;
     url: string | null;
     tenology:Array<string>;
 }
@@ -26,16 +26,16 @@ const { id, title, description, img,repository, download, logo, url, tenology  }
                         <h5 class="card__title">{title}</h5>            
                         <p class="card__tecnologies">Tecnología</p>            
                         {tenology.map((tec) => (
-                            <img style="max-width: 22px;" src={tec} alt="">
+                            <img style="max-width: 22px; display:inline-block" src={tec} alt="">
                         ))}
                     </div>
                 </div>
                 <p class="card__description">{description}</p>
                 <p class="card__description">
-                    {repository != null ? ( <a href={repository} target="_blank"><img src="icons/github.svg" alt=""></a> ) : ('')}
-                    {download != null ? ( <a href={download} target="_blank"><img src="icons/download.svg" alt=""></a> ) : ('')}
+                    {repository != null ? ( <a href={repository} target="_blank" style="display:inline-block"><img src="icons/github.svg" alt=""></a> ) : ('')}
+                    {download != null ? ( <a href={download} target="_blank" style="display:inline-block"><img   src="icons/download.svg" alt=""></a> ) : ('')}
                     {url != null ? ( <a href={url} target="_blank"><img  style="max-width: 22px;" src="icons/url.svg" alt=""></a> ) : ('')}
-                    <a href=""><img src={download} alt=""></a>
+                    <a href="" style="display:inline-block"><img src={download} alt=""></a>
                 </p>
             </div>
         </div>      

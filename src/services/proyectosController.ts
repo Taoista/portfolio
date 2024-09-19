@@ -10,6 +10,7 @@ const lista = [
         download:"https://drive.google.com/file/d/1zBsAV7IifcQSIz56lPAMWz45tkUzpvO5/view?usp=sharing", 
         logo:'images/proyectos/logo_win_optimizer_img.webp',
         url:null,
+        type:'mobile',
         tecnologies:[
                 'images/icons/flutter.svg',
         ],
@@ -23,7 +24,7 @@ const lista = [
         galery: [
            
         ]
-        },
+    },
     {
         id:2,
         titulo:'wolverchile.cl', 
@@ -35,6 +36,7 @@ const lista = [
         download:null, 
         logo:'images/proyectos/logo_wolverchile.webp',
         url:'https://wolverchile.cl',
+        type:'web',
         tecnologies:[
             'images/icons/astro.svg',
             'images/icons/vue.svg',
@@ -65,6 +67,7 @@ const lista = [
         download:null, 
         logo:'images/proyectos/logo_geo_clientes.webp',
         url:null,
+        type:'mobil',
         tecnologies:[
             'images/icons/flutter.svg',
         ],
@@ -93,6 +96,7 @@ const lista = [
         download:null, 
         logo:'images/proyectos/logo_neumatruck.webp',
         url:'https://neumatruck.cl',
+        type:'web',
         tecnologies:[
             'images/icons/laravel.svg',
             'images/icons/vue.svg',
@@ -121,6 +125,7 @@ const lista = [
         download:null, 
         logo:'images/proyectos/logo_neumaflotas.webp',
         url:null,
+        type:'mobil',
         tecnologies:[
             'images/icons/flutter.svg',
         ],
@@ -149,6 +154,7 @@ const lista = [
         download:null, 
         logo:'images/proyectos/logo_premium.webp',
         url:'https://premium.neumachile.cl',
+        type:'web',
         tecnologies:[
             'images/icons/laravel.svg',
             'images/icons/vue.svg',
@@ -178,6 +184,7 @@ const lista = [
         download:null, 
         logo:'images/proyectos/logo_neumaequipos.webp',
         url:'https://neumaequipos.cl/',
+        type:'web',
         tecnologies:[
             'images/icons/wordpress.svg',
         ],
@@ -205,6 +212,7 @@ const lista = [
         download:null, 
         logo:'images/proyectos/logo_neumagenda.webp',
         url:null,
+        type:'web',
         tecnologies:[
             'images/icons/flutter.svg',
         ],
@@ -221,6 +229,7 @@ const lista = [
             {type:false, img:'images/proyectos/neumagenda/03_neumagenda.webp'},
         ]
     },
+   
 ];
 
 // * retorna el proyecto segun su ID

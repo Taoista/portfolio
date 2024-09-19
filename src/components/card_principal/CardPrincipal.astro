@@ -1,0 +1,47 @@
+---
+import { getProyectos } from '../../services/proyectosController'
+
+
+const proyectos = getProyectos().slice(0,6);
+
+---
+
+
+{
+    proyectos.map((proyecto) =>(
+    <div class="bgrid folio-item">
+        <div class="item-wrap">
+        <img src={`/${proyecto.img}`} alt={proyecto.desc}>
+        <a href={`#modal-01-${proyecto.id}`} class="overlay">	                  	           
+            <div class="folio-item-table">
+                <div class="folio-item-cell">
+                    <h3 class="folio-title">{proyecto.titulo}</h3>	     					    
+                    <span class="folio-types">{proyecto.desc}</span>
+                </div>	                      	
+            </div>                    
+        </a>
+        </div>	               
+    </div>
+    <!-- * modal -->
+    <div id={`modal-01-${proyecto.id}`} class="popup-modal slider mfp-hide">	
+        <div class="media">
+            <img src={`/${proyecto.img}`} alt="" />
+        </div>      	
+        <div class="description-box">
+        <h4>{proyecto.titulo}</h4>		      
+        <p>
+            {proyecto.desc_large}
+        </p>
+        <div class="categories">{proyecto.type}</div>			               
+        </div>
+        <div class="link-box">
+        <a href={`/proyectos/${proyecto.id}`}>ver más</a>
+            <a href="#" class="popup-modal-dismiss">Close</a>
+        </div>		      
+    </div>
+    ))
+}
+
+
+
+

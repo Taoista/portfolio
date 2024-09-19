@@ -1,1 +1,90 @@
-error en astro
+---
+// Importa el archivo CSS con Tailwind para esta página
+import Contact from "../components/Contact.astro"
+import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
+import Layout from "../layouts/Layout.astro"
+
+
+---
+<Layout title="software">
+    <Header />
+  
+    <section id="portfolio" class="page_404">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+              <div class="four_zero_four_bg">
+                <h1 class="text-center">404</h1>
+              </div>
+  
+              <div class="contant_box_404">
+                <h3 class="h2">No te preocupes, incluso yo no se cómo llegamos aquí.</h3>
+                <p>Error 404: Lo que buscas se fue de vacaciones.</p>
+                <a href="/" class="link_404">Ir al inicio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <Contact />
+  
+    <Footer />
+  
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+  </Layout>
+  
+  <style>
+  /*======================
+      404 page
+  =======================*/
+  
+  .page_404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-family: 'Arvo', serif;
+  }
+  
+  .page_404 img {
+    width: 100%;
+  }
+  
+  .four_zero_four_bg {
+    background-image: url('/images/404_image.gif');
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .four_zero_four_bg h1 {
+    font-size: 80px;
+  }
+  
+  .four_zero_four_bg h3 {
+    font-size: 80px;
+  }
+  
+  .link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #FF0077;
+    display: inline-block;
+  }
+  
+  .contant_box_404 {
+    margin-top: -50px;
+    text-align: center;
+  }
+  </style>
+  

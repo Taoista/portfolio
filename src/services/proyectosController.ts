@@ -152,7 +152,7 @@ const lista = [
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_neumaequipos.webp',
-        url:null,
+        url:'https://neumaequipos.cl/',
         tecnologies:[
             'images/icons/wordpress.svg',
         ],

@@ -122,7 +122,12 @@ export function getStaticPaths() {
         <h3>Caracteristicas</h3>
         {
           proyectos.galery.map((images:any) =>(
-            <div class="col-twelve">
+            <div class:list={[
+             {
+              'col-twelve':images.type,
+              'col-six':!images.type
+             }
+            ]}>
               {/* <h3>Paragraph and Image</h3> */}
                 <img src={`/${images.img}`} alt="">
             </div>

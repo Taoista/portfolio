@@ -1,0 +1,6 @@
+/* src/styles/tailwind-special.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Puedes agregar estilos adicionales aquí si es necesario */

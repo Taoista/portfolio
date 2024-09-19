@@ -10,7 +10,7 @@ const lista = [
         download:"https://drive.google.com/file/d/1zBsAV7IifcQSIz56lPAMWz45tkUzpvO5/view?usp=sharing", 
         logo:'images/proyectos/logo_win_optimizer_img.webp',
         url:null,
-        type:'mobile',
+        type:'Desktop',
         tecnologies:[
                 'images/icons/flutter.svg',
         ],

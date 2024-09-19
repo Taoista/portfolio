@@ -1,29 +1,47 @@
 ---
-import { getProyectos } from '../services/proyectosController'
+interface Props {
+    id:number;
+    title:string;
+    description:string;
+    img: string;
+    repository: string | null;
+    download: string | null;
+	logo: string;
+    url: string | null;
+    tenology:Array<string>;
+}
 
-import  CardProyectos from '../components/CardProyecto.astro'
-
-const proyectos = getProyectos()
+const { id, title, description, img,repository, download, logo, url, tenology  } = Astro.props;
 ---
 
-<section id="portfolio">
+<li>
+    <a href={`/proyectos/${id}`}>
+        <div class="card">
+            <img src={img} class="card__image" alt="" />
+            <div class="card__overlay">
+                <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <img class="card__thumb" src={logo} alt="" />
+                    <div class="card__header-text">
+                        <h5 class="card__title">{title}</h5>            
+                        <p class="card__tecnologies">Tecnología</p>            
+                        {tenology.map((tec) => (
+                            <img style="max-width: 22px;" src={tec} alt="">
+                        ))}
+                    </div>
+                </div>
+                <p class="card__description">{description}</p>
+                <p class="card__description">
+                    {repository != null ? ( <a href={repository} target="_blank"><img src="icons/github.svg" alt=""></a> ) : ('')}
+                    {download != null ? ( <a href={download} target="_blank"><img src="icons/download.svg" alt=""></a> ) : ('')}
+                    {url != null ? ( <a href={url} target="_blank"><img  style="max-width: 22px;" src="icons/url.svg" alt=""></a> ) : ('')}
+                    <a href=""><img src={download} alt=""></a>
+                </p>
+            </div>
+        </div>      
+    </a>
+</li>
 
-    <div class="row section-intro">
-        <div class="col-twelve">
-            <h5>Portfolio</h5>
-            <h1>Mis trabajos.</h1>
-        </div>   		
-    </div> <!-- /section-intro--> 
-
-    <ul class="cards">
-        {
-          proyectos.map((data) => (
-            <CardProyectos id={data.id} title={data.titulo} description={data.desc} img={data.img} repository='' download='' logo={data.logo} url='' tenology={[]}  />
-          ))
-        }
-    </ul>
-    
-</section>
 
 
 <style>
@@ -126,7 +144,7 @@ body {
 .card__tagline {
   display: block;
   margin: 1em 0;
-/* font-family: "MockFlowFont";   */
+ /*font-family: "MockFlowFont";  */
   font-size: .8em; 
   color: #D7BDCA;  
 }
@@ -140,7 +158,7 @@ body {
   padding: 0 2em 2em;
   margin: 0;
   color: #313131;
-  /* font-family: "MockFlowFont";    */
+    /*font-family: "MockFlowFont";   */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;

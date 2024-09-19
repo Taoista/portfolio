@@ -1,0 +1,138 @@
+---
+import Contact from "../../components/Contact.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/HeaderSoftware.astro";
+import FichaProyecto from "../../components/proyecto/FichaProyecto.vue";
+import Layout from "../../layouts/LayoutSoftware.astro"
+
+import { getProyectById, getProyectos } from "../../services/proyectosController";
+
+const { id } = Astro.params
+
+let proyectos
+
+if(id){
+    proyectos =  await getProyectById(id);
+    console.log(proyectos.img)
+}
+
+export function getStaticPaths() {
+
+  const idProyects = getProyectos();
+
+  return idProyects.map(idProyect => ({
+    params:{id :idProyect.id, title: idProyect.titulo,}
+  }))
+  // return [
+  //   {params: {id: 4}},
+  // ];
+}
+
+---
+
+<Layout title="software">
+  <Header />
+	<section id="portfolio">
+
+    <div class="row section-intro">
+      <div class="col-twelve">
+          <h5>Portfolio</h5>
+          <h1>{ proyectos.titulo.toUpperCase() }</h1>
+      </div>   		
+  </div> 
+
+   <div class="bg-white">
+    
+    <div class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-1 lg:px-8">
+      <div>
+        <div class="grid grid-cols-1 grid-rows-1 gap-4 sm:gap-6 lg:gap-12 mb-20">
+          <img src=`/${proyectos.img}` alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." class="rounded-lg bg-gray-100">
+        </div>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Descripción</h2>
+        <p class="mt-4 text-gray-500">
+          { proyectos.desc_large }
+        </p>
+
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-20">Tecnología</h2>
+        <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+          {
+            proyectos.tecnologies.map((tec: string) =>(
+              
+              <div class="border-t border-gray-200 pt-4">
+                <img src=`/${tec}` class="w-20 h-auto" alt="">
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Url:</h2>
+        <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+         
+            <div class="border-t border-gray-200 pt-4">
+             
+              <dt class="font-medium text-gray-900"> <a href={ proyectos.url } target="_blank">{ proyectos.url }</a></dt>
+            </div>
+          
+        </dl>
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Características principales:</h2>
+        <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+          {
+            proyectos.features.map((fit:string) =>(
+              <div class="border-t border-gray-200 pt-4">
+                <dt class="font-medium text-gray-900">{fit}</dt>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+
+      
+      
+      <div class="grid grid-cols-1 grid-rows-1 gap-4 sm:gap-6 lg:gap-8">
+      {
+        proyectos.galery.map((ima: any) =>(
+          ima.type == true ?(
+            <img src=`/${ima.img}` alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." class="rounded-lg bg-gray-100">
+          ):null
+        ))
+      }
+      </div>
+
+      <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+      {
+        proyectos.galery.map((ima: any) =>(
+          ima.type == false ?(
+            <img src=`/${ima.img}` alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." class="rounded-lg bg-gray-100">
+          ):null
+        ))
+      }
+      </div>
+    </div>
+  </div>
+  </section>
+	
+	<Contact />
+	
+	<Footer />
+
+	
+
+
+<Contact />
+	
+<Footer />
+
+<div id="preloader"> 
+  <div id="loader"></div>
+</div> 
+
+</Layout>
+
+<style>
+
+
+  
+</style>

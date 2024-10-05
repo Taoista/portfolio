@@ -4,7 +4,6 @@ import '../../../src/styles/tailwind-special.css';
 import Contact from "../../components/Contact.astro";
 import Footer from "../../components/Footer.astro";
 import Header from "../../components/HeaderSoftware.astro";
-import FichaProyecto from "../../components/proyecto/FichaProyecto.vue";
 import Layout from "../../layouts/LayoutSoftware.astro"
 
 import { getProyectById, getProyectos } from "../../services/proyectosController";
@@ -15,7 +14,6 @@ let proyectos
 
 if(id){
     proyectos =  await getProyectById(id);
-    console.log(proyectos.img)
 }
 
 export function getStaticPaths() {

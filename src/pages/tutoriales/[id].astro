@@ -1,0 +1,143 @@
+---
+// Importa el archivo CSS con Tailwind para esta página
+import '../../../src/styles/tailwind-special.css';
+import CodeEditor from '../../components/commands/CodeEditor.astro';
+import Contact from "../../components/Contact.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/HeaderSoftware.astro";
+import Layout from "../../layouts/LayoutSoftware.astro";
+
+
+// import DemoComponente from "../../commands/Demo.md";
+
+import { getVideoId, getVideos } from '../../services/videosController';
+
+const { id } = Astro.params
+
+let videos
+
+if(id){
+    videos =  await getVideoId(id);
+}
+
+export function getStaticPaths() {
+
+  const idProyects = getVideos();
+
+  return idProyects.map(idProyect => ({
+    params:{id :idProyect.id, title: idProyect.title,}
+  }))
+  // return [
+  //   {params: {id: 4}},
+  // ];
+}
+
+---
+
+<Layout title="software">
+   
+    <Header />
+    <div style="background:white">
+        <section id="portfolio">
+                <h1 class="post-title">{ videos.title }</h1>
+                <div class="post-meta">Publicado el 5 de octubre,2024</div>
+                <!-- <img src={videos.img} alt="Imagen de portada del post" class="post-image"> -->
+                <div class="post-content">
+                    <p>
+                        En este tutorial aprenderás a resolver problemas de CORS (Cross-Origin Resource Sharing) cuando trabajas con Laravel Lumen como backend y Angular en el frontend. Te mostrare paso a paso cómo configurar correctamente tu API para evitar errores de acceso entre dominios, y asegurarte de que tu aplicación Angular pueda comunicarse sin problemas con el backend de Lumen.
+                    </p>
+                </div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7pRE0jAQ3f8?si=2yqSN6UJJ0v-d5AY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title2">🔧 Temas que abordaremos:</h3>
+                    ¿Qué es CORS y por qué ocurre?
+                    <ul>
+                        <li> Configuración de los encabezados CORS en Laravel Lumen.</li>
+                        <li> Solución a problemas comunes de CORS en Angular.</li>
+                        <li>  Buenas prácticas para evitar conflictos entre frontend y backend.</li>
+                        <li>No olvides suscribirte y activar la campanita para más tutoriales sobre desarrollo web.</li>
+                    </ul>
+                </div>
+                <div class="post-content">
+                    <!-- <h3 class="post-title2">🔧 Temas que abordaremos:</h3>
+                    ¿Qué es CORS y por qué ocurre? -->
+
+                    <!-- <CodeEditor code="console.log()" language='javascript' filename = 'example.js' /> -->
+                    <!-- <DemoComponente /> -->
+                    
+                    <!-- <ul>
+                        <li>Crear proyecto Lumen</li>
+                        <li> Solución a problemas comunes de CORS en Angular.</li>
+                        <li>  Buenas prácticas para evitar conflictos entre frontend y backend.</li>
+                        <li>No olvides suscribirte y activar la campanita para más tutoriales sobre desarrollo web.</li>
+                    </ul> -->
+                </div>
+        </section>
+    </div>
+    
+	<Contact />
+	
+	<Footer />
+
+  <div id="preloader"> 
+    <div id="loader"></div>
+  </div> 
+</Layout>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Post con Video</title>
+    <style>
+        section {
+            /* font-family: Arial, sans-serif; */
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .post-title {
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+        .post-title2{
+            font-size: 2em;
+        }
+        .post-meta {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .post-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .post-content {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* linea de comando */
+ 
+
+
+        
+    </style>

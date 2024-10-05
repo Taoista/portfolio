@@ -2,10 +2,9 @@
 import CardVideos from "./CardVideos.astro";
 
 import { getVideos } from '../services/videosController';
-import { getProyectos } from '../services/proyectosController'
 
 
-const videos = getVideos()
+const videoYoutube = getVideos()
 ---
 
 <section id="portfolio">
@@ -19,7 +18,7 @@ const videos = getVideos()
 
     <ul class="cards">
         {
-            videos.map((data) => (
+            videoYoutube.map((data) => (
                 <CardVideos id={data.id} title={data.title} type={data.type} url={data.url} imgUrl={data.img} />
                 <CardVideos id={data.id} title={data.title} type={data.type} url={data.url} imgUrl={data.img} />
                 <CardVideos id={data.id} title={data.title} type={data.type} url={data.url} imgUrl={data.img} />

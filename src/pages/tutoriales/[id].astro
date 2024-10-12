@@ -8,8 +8,6 @@ import Header from "../../components/HeaderSoftware.astro";
 import Layout from "../../layouts/LayoutSoftware.astro";
 
 
-// import DemoComponente from "../../commands/Demo.md";
-
 import { getVideoId, getVideos } from '../../services/videosController';
 
 const { id } = Astro.params
@@ -39,7 +37,7 @@ export function getStaticPaths() {
     <Header />
     <div style="background:white">
         <section id="portfolio">
-                <h1 class="post-title">{ videos.title }</h1>
+                <h1 class="post-title">🚀 { videos.title } 🌐</h1>
                 <div class="post-meta">Publicado el 5 de octubre,2024</div>
                 <!-- <img src={videos.img} alt="Imagen de portada del post" class="post-image"> -->
                 <div class="post-content">
@@ -60,20 +58,9 @@ export function getStaticPaths() {
                         <li>No olvides suscribirte y activar la campanita para más tutoriales sobre desarrollo web.</li>
                     </ul>
                 </div>
-                <div class="post-content">
-                    <!-- <h3 class="post-title2">🔧 Temas que abordaremos:</h3>
-                    ¿Qué es CORS y por qué ocurre? -->
 
-                    <!-- <CodeEditor code="console.log()" language='javascript' filename = 'example.js' /> -->
-                    <!-- <DemoComponente /> -->
-                    
-                    <!-- <ul>
-                        <li>Crear proyecto Lumen</li>
-                        <li> Solución a problemas comunes de CORS en Angular.</li>
-                        <li>  Buenas prácticas para evitar conflictos entre frontend y backend.</li>
-                        <li>No olvides suscribirte y activar la campanita para más tutoriales sobre desarrollo web.</li>
-                    </ul> -->
-                </div>
+
+
         </section>
     </div>
     
@@ -81,9 +68,10 @@ export function getStaticPaths() {
 	
 	<Footer />
 
-  <div id="preloader"> 
-    <div id="loader"></div>
-  </div> 
+    <div id="preloader"> 
+        <div id="loader"></div>
+    </div> 
+
 </Layout>
 
 
@@ -93,6 +81,7 @@ export function getStaticPaths() {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Post con Video</title>
     <style>
+      
         section {
             /* font-family: Arial, sans-serif; */
             line-height: 1.6;
@@ -137,7 +126,19 @@ export function getStaticPaths() {
         }
         /* linea de comando */
  
+        .code-container {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+        }
 
+        .code-container code {
+            display: block;
+            color: #333;
+            line-height: 1.5;
+        }
 
         
     </style>

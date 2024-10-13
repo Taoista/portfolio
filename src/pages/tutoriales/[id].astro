@@ -38,29 +38,26 @@ export function getStaticPaths() {
     <div style="background:white">
         <section id="portfolio">
                 <h1 class="post-title">🚀 { videos.title } 🌐</h1>
-                <div class="post-meta">Publicado el 5 de octubre,2024</div>
+                <div class="post-meta">Publicado el { videos.publicacion }</div>
                 <!-- <img src={videos.img} alt="Imagen de portada del post" class="post-image"> -->
                 <div class="post-content">
-                    <p>
-                        En este tutorial aprenderás a resolver problemas de CORS (Cross-Origin Resource Sharing) cuando trabajas con Laravel Lumen como backend y Angular en el frontend. Te mostrare paso a paso cómo configurar correctamente tu API para evitar errores de acceso entre dominios, y asegurarte de que tu aplicación Angular pueda comunicarse sin problemas con el backend de Lumen.
-                    </p>
+                    <p>{ videos.descripcion }</p>
                 </div>
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7pRE0jAQ3f8?si=2yqSN6UJJ0v-d5AY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src={ videos.url } frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
                 <div class="post-content">
                     <h3 class="post-title2">🔧 Temas que abordaremos:</h3>
                     ¿Qué es CORS y por qué ocurre?
                     <ul>
-                        <li> Configuración de los encabezados CORS en Laravel Lumen.</li>
-                        <li> Solución a problemas comunes de CORS en Angular.</li>
-                        <li>  Buenas prácticas para evitar conflictos entre frontend y backend.</li>
-                        <li>No olvides suscribirte y activar la campanita para más tutoriales sobre desarrollo web.</li>
+                        {videos.temas.map((item) => (
+                            <li>{item}</li>
+                          ))}
                     </ul>
                 </div>
 
                 <div class="post-content">
-                    <a href="https://github.com/Taoista/tutorual-cors-laravel-lumen-angular" target="_blank">
+                    <a href={videos.repositorio} target="_blank">
                         <img src="/icons/github.svg" alt="">
                     </a>
                 </div>

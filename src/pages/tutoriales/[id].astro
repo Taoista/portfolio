@@ -48,19 +48,23 @@ export function getStaticPaths() {
                 </div>
                 <div class="post-content">
                     <h3 class="post-title2">🔧 Temas que abordaremos:</h3>
-                    ¿Qué es CORS y por qué ocurre?
+                   
                     <ul>
                         {videos.temas.map((item:string) => (
                             <li>{item}</li>
                           ))}
                     </ul>
                 </div>
-
-                <div class="post-content">
+                {
+                    videos.repositorio != null ?
+                    <div class="post-content">
                     <a href={videos.repositorio} target="_blank">
                         <img src="/icons/github.svg" alt="">
                     </a>
-                </div>
+                    </div>:
+                    ''
+                }
+              
 
 
 

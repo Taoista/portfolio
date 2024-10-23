@@ -33,6 +33,24 @@ const videos = [
             'Testing en el ambiente de integración: Probar tu implementación en el ambiente de integración de Transbank antes de pasar a producción.',
             'Conclusión: Recomendaciones para ir a producción y buenas prácticas de seguridad.'
         ]
+    },
+    {
+        id:3,
+        title: 'Título: Del Cliente a la Solución: Ideas en Proyectos Tecnológicos',
+        publicacion:'13 de octubre 2024',
+        descripcion:'En este video, aprenderás cómo prepararte de manera efectiva para una reunión de definición de requisitos con tu cliente, paso a paso. Desde la investigación previa hasta la documentación, entender las necesidades del cliente y definir claramente los requisitos funcionales y no funcionales. También abordamos temas clave como la creación de un cronograma con hitos, el presupuesto, la comunicación efectiva, la gestión de riesgos, las pruebas y la entrega final del proyecto. ¡Asegúrate de estar listo para llevar tu proyecto al éxito desde el inicio! ',
+        url: 'https://youtu.be/C-lhtd-ZqDA',
+        img: 'https://i.ibb.co/P96HpPw/Shocking-moments.png',
+        type:'otro',
+        repositorio:null,
+        temas:[
+            '1. Preparación Previa',
+            '2. Levantamiento de requerimientos',
+            '3. Definir los Requisitos del Proyecto',
+            '4. Tecnologías y Herramientas',
+            '5. Presupuesto',
+            '6. Soporte - Mantenimiento'
+        ]
     }
 ];
 

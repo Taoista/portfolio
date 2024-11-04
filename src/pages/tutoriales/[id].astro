@@ -64,6 +64,23 @@ export function getStaticPaths() {
                     </div>:
                     ''
                 }
+
+                {
+                    videos.comandos.length > 0 ? 
+                    <div class="post-content">
+                    <h3 class="post-title2">🔧 Comandos:</h3>
+                    
+                    <ul>
+                        {videos.comandos.map((item:string) => (
+                            <li>{item}</li>
+                          ))}
+                    </ul> : 
+                    </div>:
+                    ''
+                }
+
+                
+                </div>
               
 
 

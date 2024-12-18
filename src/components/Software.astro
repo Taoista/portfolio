@@ -3,7 +3,7 @@ import { getProyectos } from '../services/proyectosController'
 
 import  CardProyectos from '../components/CardProyecto.astro'
 
-const proyectos = getProyectos()
+const proyectos = getProyectos().reverse()
 ---
 
 <section id="portfolio">

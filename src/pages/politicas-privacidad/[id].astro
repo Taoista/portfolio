@@ -48,8 +48,8 @@ export function getStaticPaths() {
         <p><img src={`/${proyectos.img}`}></p>
       </div>
 
-
       {
+        proyectos.privacy_policy != null ?
         proyectos.privacy_policy.map((policy: any) => {
           return (
             <div class="col-twelve">
@@ -59,8 +59,9 @@ export function getStaticPaths() {
               </p>   
             </div>
           );
-        })
+        }):''
       }
+     
 
       </div>
   </section>

@@ -255,6 +255,34 @@ const lista = [
             {type:true, img:'images/proyectos/cavaspces/01_cavaspaces.webp'},
         ]
     },
+    {
+        id:10,
+        titulo:'Nobitires', 
+        desc:'Nobitires es una aplicación móvil creada en Flutter que te ayuda a encontrar medidas de neumáticos alternativas para tu vehículo. Descubre rápidamente si un neumático diferente es viable para reemplazar el original y asegura una conducción segura y óptima',
+        desc_large:'Nobitires es la solución perfecta para quienes buscan reemplazar sus neumáticos de manera informada y precisa. Nuestra app móvil, desarrollada en Flutter, permite ingresar las medidas del neumático actual y explorar alternativas compatibles que garantizan la seguridad y el rendimiento de tu vehículo. Con una interfaz sencilla y amigable, Nobitires es tu aliado ideal para tomar decisiones rápidas y acertadas al momento de cambiar tus neumáticos.',
+        desc_finish:'Nobitires es una aplicación móvil intuitiva desarrollada en Flutter, diseñada para ayudarte a encontrar neumáticos alternativos compatibles con tu vehículo. Simplemente ingresa las medidas del neumático actual y Nobitires te mostrará otras opciones viables, garantizando seguridad y rendimiento en cada reemplazo. Ideal para quienes buscan tomar decisiones rápidas y bien fundamentadas al momento de cambiar sus neumáticos, Nobitires es tu herramienta confiable para mantener tu vehículo en óptimas condiciones.',
+        img: 'images/proyectos/neumagenda.webp', 
+        repo:null, 
+        download:null, 
+        logo:'images/proyectos/logo_neumagenda.webp',
+        url:null,
+        type:'web',
+        tecnologies:[
+            'images/icons/flutter.svg',
+        ],
+        features:[
+            'Desarrollado en Flutter: Utiliza Flutter para proporcionar una interfaz de usuario moderna y fluida, asegurando un rendimiento óptimo y una experiencia consistente en dispositivos móviles y de escritorio.',
+            'Agendamiento de eventos: Permite a los usuarios programar citas y eventos en los horarios y fechas establecidos por el administrador, facilitando la organización y gestión de citas de manera efectiva.',
+            'Interfaz intuitiva: Diseñado con una interfaz gráfica amigable y fácil de usar, que simplifica el proceso de programación y visualización de citas, mejorando la eficiencia en la gestión de agendas.',
+            'Flexibilidad en la programación: Admite la programación de diferentes tipos de citas y eventos, adaptándose a diversas necesidades y escenarios de agendamiento.',
+            'Sincronización y notificaciones: Ofrece funciones de sincronización y notificación para recordar a los usuarios sobre las citas programadas y asegurar que no se pierdan eventos importantes.'
+        ],
+        galery: [
+            {type:false, img:'images/proyectos/neumagenda/01_neumagenda.webp'},
+            {type:false, img:'images/proyectos/neumagenda/02_neumagenda.webp'},
+            {type:false, img:'images/proyectos/neumagenda/03_neumagenda.webp'},
+        ]
+    },
    
 ];
 

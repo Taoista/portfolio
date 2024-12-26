@@ -54,6 +54,17 @@ export function getStaticPaths() {
           { proyectos.desc_large }
         </p>   			
       </div>
+      {
+        proyectos.privacy_policy != null ?
+        <div class="col-twelve">
+          <h2>Política de Privacidad</h2>
+          <p class="lead">
+            <a href={`/politicas-privacidad/${id}`}>Ver</a>
+          </p>   			
+        </div>:
+        ''
+      }
+      
 
       <div class="row add-bottom">
       	<div class="col-twelve">

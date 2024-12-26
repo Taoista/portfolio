@@ -1,0 +1,84 @@
+---
+// Importa el archivo CSS con Tailwind para esta página
+import '../../../src/styles/tailwind-special.css';
+import Contact from "../../components/Contact.astro";
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/HeaderSoftware.astro";
+import Layout from "../../layouts/LayoutSoftware.astro"
+
+import { getProyectById, getProyectos } from "../../services/proyectosController";
+
+const { id } = Astro.params
+
+let proyectos
+
+if(id){
+    proyectos =  await getProyectById(id);
+}
+
+export function getStaticPaths() {
+
+  const idProyects = getProyectos();
+
+  return idProyects.map(idProyect => ({
+    params:{id :idProyect.id, title: idProyect.titulo,}
+  }))
+  // return [
+  //   {params: {id: 4}},
+  // ];
+}
+
+---
+
+<Layout title="software">
+  <Header />
+  
+  <section id="portfolio">
+
+    <div class="row section-intro">
+
+      
+      <div class="col-twelve">
+        <h1>Política de Privacidad</h1>
+        <p class="lead">
+          <strong>{ proyectos.titulo }</strong>
+        </p>
+      </div>
+      <div class="col-twelve tab-full">
+        <p><img src={`/${proyectos.img}`}></p>
+      </div>
+
+
+      {
+        proyectos.privacy_policy.map((policy: any) => {
+          return (
+            <div class="col-twelve">
+              <h2> {policy.title}</h2>
+              <p class="lead">
+                {policy.text}
+              </p>   
+            </div>
+          );
+        })
+      }
+
+      </div>
+  </section>
+
+	<Contact />
+	
+	<Footer />
+
+  <div id="preloader"> 
+    <div id="loader"></div>
+  </div> 
+
+</Layout>
+
+
+<style>
+
+
+
+</style>
+

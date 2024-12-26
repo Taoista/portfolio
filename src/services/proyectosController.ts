@@ -23,7 +23,8 @@ const lista = [
         ],
         galery: [
            
-        ]
+        ],
+        privacy_policy:null
     },
     {
         id:2,
@@ -52,7 +53,8 @@ const lista = [
             {type:false, img:'images/proyectos/geoclientes/01_geoclientes.webp'},
             {type:false, img:'images/proyectos/geoclientes/02_geoclientes.webp'},
             {type:false, img:'images/proyectos/geoclientes/03_geoclientes.webp'},
-        ]
+        ],
+        privacy_policy:null
     },
     {
         id:3,
@@ -81,7 +83,8 @@ const lista = [
             {type:true, img:'images/proyectos/neumatruck/01_neumatruck.webp'},
             {type:false, img:'images/proyectos/neumatruck/02_neumatruck.webp'},
             {type:false, img:'images/proyectos/neumatruck/03_neumatruck.webp'},
-        ]
+        ],
+        privacy_policy:null
     },
     {
         id:4,
@@ -110,7 +113,8 @@ const lista = [
             {type:false, img:'images/proyectos/neumaflotas/02_neumaflotas.webp'},
             {type:false, img:'images/proyectos/neumaflotas/03_neumaflotas.webp'},
             {type:false, img:'images/proyectos/neumaflotas/04_neumaflotas.webp'},
-        ]
+        ],
+        privacy_policy:null
     },
     {
         id:5,
@@ -140,7 +144,8 @@ const lista = [
             {type:true, img:'images/proyectos/premium_neumachile/01_premium.webp'},
             {type:true, img:'images/proyectos/premium_neumachile/02_premium.webp'},
             {type:true, img:'images/proyectos/premium_neumachile/03_premium.webp'},
-        ]
+        ],
+        privacy_policy:null
     },
     {
         id:6,
@@ -168,7 +173,8 @@ const lista = [
             {type:true, img:'images/proyectos/neumaequipos/01_neumaequipos.webp'},
             {type:true, img:'images/proyectos/neumaequipos/02_neumaequipos.webp'},
             {type:true, img:'images/proyectos/neumaequipos/03_neumaequipos.webp'},
-        ]
+        ],
+        privacy_policy:null
     },
     {
         id:7,
@@ -196,7 +202,8 @@ const lista = [
             {type:false, img:'images/proyectos/neumagenda/01_neumagenda.webp'},
             {type:false, img:'images/proyectos/neumagenda/02_neumagenda.webp'},
             {type:false, img:'images/proyectos/neumagenda/03_neumagenda.webp'},
-        ]
+        ],
+        privacy_policy:null
     },
     {
         id:8,
@@ -226,7 +233,8 @@ const lista = [
             {type:false, img:'images/proyectos/wolverchile/02_wolverchile.webp'},
             {type:false, img:'images/proyectos/wolverchile/03_wolverchile.webp'},
             {type:false, img:'images/proyectos/wolverchile/04_wolverchile.webp'},
-        ]
+        ],
+        privacy_policy:null
         
     },
     {
@@ -253,7 +261,8 @@ const lista = [
         ],
         galery: [
             {type:true, img:'images/proyectos/cavaspces/01_cavaspaces.webp'},
-        ]
+        ],
+        privacy_policy:null
     },
     {
         id:10,
@@ -261,10 +270,10 @@ const lista = [
         desc:'Nobitires es una aplicación móvil creada en Flutter que te ayuda a encontrar medidas de neumáticos alternativas para tu vehículo. Descubre rápidamente si un neumático diferente es viable para reemplazar el original y asegura una conducción segura y óptima',
         desc_large:'Nobitires es la solución perfecta para quienes buscan reemplazar sus neumáticos de manera informada y precisa. Nuestra app móvil, desarrollada en Flutter, permite ingresar las medidas del neumático actual y explorar alternativas compatibles que garantizan la seguridad y el rendimiento de tu vehículo. Con una interfaz sencilla y amigable, Nobitires es tu aliado ideal para tomar decisiones rápidas y acertadas al momento de cambiar tus neumáticos.',
         desc_finish:'Nobitires es una aplicación móvil intuitiva desarrollada en Flutter, diseñada para ayudarte a encontrar neumáticos alternativos compatibles con tu vehículo. Simplemente ingresa las medidas del neumático actual y Nobitires te mostrará otras opciones viables, garantizando seguridad y rendimiento en cada reemplazo. Ideal para quienes buscan tomar decisiones rápidas y bien fundamentadas al momento de cambiar sus neumáticos, Nobitires es tu herramienta confiable para mantener tu vehículo en óptimas condiciones.',
-        img: 'images/proyectos/neumagenda.webp', 
+        img: 'images/proyectos/nobitires.webp', 
         repo:null, 
         download:null, 
-        logo:'images/proyectos/logo_neumagenda.webp',
+        logo:'images/proyectos/nobitires.webp',
         url:null,
         type:'web',
         tecnologies:[
@@ -281,6 +290,12 @@ const lista = [
             {type:false, img:'images/proyectos/neumagenda/01_neumagenda.webp'},
             {type:false, img:'images/proyectos/neumagenda/02_neumagenda.webp'},
             {type:false, img:'images/proyectos/neumagenda/03_neumagenda.webp'},
+        ],
+        privacy_policy:[
+            {title:'1. Uso de la aplicación', text:'La información que ingresas en la aplicación, como las medidas de los neumáticos, se procesa exclusivamente en tu dispositivo y no se guarda ni se transmite a ningún servidor.'},
+            {title:'2. No recopilación de datos', text:'Nobitires está diseñada para funcionar sin necesidad de recopilar ningún dato personal. Esto significa que tu privacidad está completamente protegida al utilizar nuestra aplicación.'},
+            {title:'3. Cambios en la política de privacidad', text:'Esta política podría ser actualizada en el futuro para reflejar cambios en las funciones de la aplicación o por motivos legales. Te notificaremos de cualquier cambio significativo a través de esta página.'},
+            {title:'4. Contacto', text:'Si tienes alguna pregunta sobre esta política de privacidad, puedes ponerte en contacto con nosotros: Correo electrónico: luis.olave.carvajal@gmail.com'},
         ]
     },
    

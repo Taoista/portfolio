@@ -280,16 +280,14 @@ const lista = [
             'images/icons/flutter.svg',
         ],
         features:[
-            'Desarrollado en Flutter: Utiliza Flutter para proporcionar una interfaz de usuario moderna y fluida, asegurando un rendimiento óptimo y una experiencia consistente en dispositivos móviles y de escritorio.',
-            'Agendamiento de eventos: Permite a los usuarios programar citas y eventos en los horarios y fechas establecidos por el administrador, facilitando la organización y gestión de citas de manera efectiva.',
-            'Interfaz intuitiva: Diseñado con una interfaz gráfica amigable y fácil de usar, que simplifica el proceso de programación y visualización de citas, mejorando la eficiencia en la gestión de agendas.',
-            'Flexibilidad en la programación: Admite la programación de diferentes tipos de citas y eventos, adaptándose a diversas necesidades y escenarios de agendamiento.',
-            'Sincronización y notificaciones: Ofrece funciones de sincronización y notificación para recordar a los usuarios sobre las citas programadas y asegurar que no se pierdan eventos importantes.'
+            'Interfaz de usuario fluida y nativa: Flutter permite crear aplicaciones con una interfaz de usuario altamente interactiva y similar a las aplicaciones nativas, asegurando una experiencia visualmente atractiva y fácil de usar en dispositivos Android e iOS.',
+            'Rendimiento optimizado: Gracias a su arquitectura basada en el motor de renderizado propio, Flutter garantiza un alto rendimiento, permitiendo que Nobitires funcione de manera rápida y eficiente, incluso con tareas de procesamiento en tiempo real, como la comparación de medidas de neumáticos.',
+            'Desarrollo multiplataforma: Flutter permite que Nobitires se ejecute de manera fluida tanto en dispositivos Android como iOS sin necesidad de escribir código específico para cada plataforma, lo que ahorra tiempo y esfuerzo de desarrollo mientras mantiene la consistencia en ambas plataformas.',
         ],
         galery: [
-            {type:false, img:'images/proyectos/neumagenda/01_neumagenda.webp'},
-            {type:false, img:'images/proyectos/neumagenda/02_neumagenda.webp'},
-            {type:false, img:'images/proyectos/neumagenda/03_neumagenda.webp'},
+            {type:false, img:'images/proyectos/nobitires/01_nobitires.webp'},
+            {type:false, img:'images/proyectos/nobitires/02_nobitires.webp'},
+            {type:false, img:'images/proyectos/nobitires/03_nobitires.webp'},
         ],
         privacy_policy:[
             {title:'1. Uso de la aplicación', text:'La información que ingresas en la aplicación, como las medidas de los neumáticos, se procesa exclusivamente en tu dispositivo y no se guarda ni se transmite a ningún servidor.'},

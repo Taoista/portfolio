@@ -275,7 +275,7 @@ const lista = [
         download:null, 
         logo:'images/proyectos/logo_nobitires.webp',
         url:null,
-        type:'web',
+        type:'mobil',
         tecnologies:[
             'images/icons/flutter.svg',
         ],

@@ -273,7 +273,7 @@ const lista = [
         img: 'images/proyectos/nobitires.webp', 
         repo:null, 
         download:null, 
-        logo:'images/proyectos/nobitires.webp',
+        logo:'images/proyectos/logo_nobitires.webp',
         url:null,
         type:'web',
         tecnologies:[

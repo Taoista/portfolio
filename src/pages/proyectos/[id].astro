@@ -127,7 +127,11 @@ export function getStaticPaths() {
       </div>
 
       <div class="row">
-        <h3>Caracteristicas</h3>
+        {proyectos.galery.length != 0 ?
+          <h3>Caracteristicas</h3>:
+          ''
+        }
+        
         {
           proyectos.galery.map((images:any) =>(
             <div class:list={[

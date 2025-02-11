@@ -296,6 +296,34 @@ const lista = [
             {title:'4. Contacto', text:'Si tienes alguna pregunta sobre esta política de privacidad, puedes ponerte en contacto con nosotros: Correo electrónico: luis.olave.carvajal@gmail.com'},
         ]
     },
+    {
+        id:11,
+        titulo:'Agente de Ventas', 
+        desc:'Agente de Ventas Inteligente es una aplicación potenciada con inteligencia artificial que optimiza y automatiza el proceso de ventas, ayudando a los equipos comerciales a mejorar su eficiencia y conversión de clientes.',
+        desc_large:'Es un agente de ventas inteligente impulsado por inteligencia artificial, diseñado para optimizar la interacción con clientes y automatizar procesos comerciales. Gracias a su capacidad de análisis y aprendizaje, la aplicación recomienda productos, gestiona cotizaciones, agenda reuniones y realiza seguimientos automáticos, todo en un solo lugar.',
+        desc_finish:'Con su asistente virtual integrado, los clientes reciben respuestas instantáneas y asesoramiento personalizado, mejorando la experiencia de compra y aumentando la tasa de conversión. Además, su sistema de análisis predictivo ayuda a los equipos de ventas a identificar oportunidades y tomar decisiones estratégicas basadas en datos reales.',
+        img: 'images/proyectos/agetnte-ventas.webp', 
+        repo:null, 
+        download:null, 
+        logo:'images/proyectos/logo_agente_ventas.webp',
+        url:null,
+        type:'ia',
+        tecnologies:[
+            'images/icons/angular.svg',
+            'images/icons/laravel.svg',
+            'images/icons/mysql.svg',
+            'images/icons/openai.svg',
+        ],
+        features:[
+            'Asesoramiento Inteligente: Recomienda productos o servicios personalizados según el perfil y necesidades del cliente.',
+            'Automatización de Tareas: Genera cotizaciones, envía correos de seguimiento y programa recordatorios.',
+            'Análisis Predictivo: Predice tendencias de compra y comportamientos de clientes para mejorar estrategias de venta.',
+            'chatbot y Asistencia Virtual: Responde consultas en tiempo real y guía a los clientes en su proceso de compra.',
+            'Integración con Plataformas Externas: Compatible con herramientas de e-commerce, ERP y sistemas de pago.'
+        ],
+        galery: [],
+        privacy_policy:null
+    },
    
 ];
 

@@ -9,13 +9,14 @@ interface Props {
 	  logo: string;
     url: string | null;
     tenology:Array<string>;
+    url_path:string;
 }
 
-const { id, title, description, img,repository, download, logo, url, tenology  } = Astro.props;
+const { id, title, description, img,repository, download, logo, url, tenology, url_path  } = Astro.props;
 ---
 
 <li>
-    <a href={`/proyectos/${id}`}>
+    <a href={`/proyectos/${url_path}`}>
         <div class="card">
             <img src={img} class="card__image" alt="" />
             <div class="card__overlay">

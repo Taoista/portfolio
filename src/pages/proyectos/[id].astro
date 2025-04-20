@@ -21,11 +21,9 @@ export function getStaticPaths() {
   const idProyects = getProyectos();
 
   return idProyects.map(idProyect => ({
-    params:{id :idProyect.id, title: idProyect.titulo,}
+    params:{id :idProyect.url_path, title: idProyect.titulo,}
   }))
-  // return [
-  //   {params: {id: 4}},
-  // ];
+
 }
 
 ---
@@ -44,9 +42,13 @@ export function getStaticPaths() {
           { proyectos.desc }
         </p>
       </div>
-      <div class="col-twelve tab-full">
-        <p><img src={`/${proyectos.img}`}></p>
-      </div>
+      {
+        proyectos.img.map((item: string) =>(   
+          <div class="col-twelve tab-full">
+            <p><img src={`/${item}`}></p>
+          </div>
+        ))
+      }
 
       <div class="col-twelve">
         <h2>Descripción</h2>

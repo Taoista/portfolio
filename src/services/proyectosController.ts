@@ -1,11 +1,12 @@
 const lista = [
     {
         id:1,
+        url_path:'win-optimizer-image',
         titulo:'Win optimizer Image', 
         desc:'software para transformasar y optimizar imagenes',
         desc_large:'Win Optimizer Image es una potente aplicación de escritorio desarrollada en Flutter, destinada a la optimización eficiente de imágenes. Este software está diseñado para usuarios que buscan reducir el tamaño de sus archivos de imagen sin sacrificar la calidad, ideal para mejorar la velocidad de carga en sitios web y aplicaciones móviles.',
         desc_finish:'Win Optimizer Image es la solución ideal para profesionales y entusiastas que necesitan una herramienta efectiva y fácil de usar para mejorar el rendimiento visual de sus proyectos mediante la optimización de imágenes.',
-        img: 'images/proyectos/win_optimizer_img.webp', 
+        img: ['images/proyectos/win_optimizer_img.webp'], 
         repo:'https://github.com/Taoista/win_optimizer_img', 
         download:"https://drive.google.com/file/d/1zBsAV7IifcQSIz56lPAMWz45tkUzpvO5/view?usp=sharing", 
         logo:'images/proyectos/logo_win_optimizer_img.webp',
@@ -28,11 +29,12 @@ const lista = [
     },
     {
         id:2,
+        url_path:'geoclientes',
         titulo:'geoclientes', 
         desc:'Landing page respresentantes oficial en chile',
         desc_large:'GeoClientes es una innovadora aplicación móvil desarrollada en Flutter para iOS y Android, diseñada para optimizar el proceso de captura de requerimientos de clientes y verificar visitas en terreno. Esta herramienta facilita a los vendedores la recopilación de información clave, la toma de fotografías y la obtención de la georreferencia exacta de su ubicación, garantizando una gestión eficiente y precisa de las visitas.',
         desc_finish:'GeoClientes es la solución ideal para empresas que buscan mejorar la precisión y la eficiencia en la captura de datos de clientes y la gestión de visitas en terreno, proporcionando una herramienta integral y fácil de usar para sus equipos de ventas.',
-        img: 'images/proyectos/geo_cliente.webp', 
+        img: ['images/proyectos/geo_cliente.webp'], 
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_geo_clientes.webp',
@@ -58,11 +60,12 @@ const lista = [
     },
     {
         id:3,
+        url_path:'neumatruck',
         titulo:'Neumatruck', 
         desc:'Ecommerce',
         desc_large:'Neumatruck es una eficiente y moderna página web de comercio electrónico desarrollada con Laravel y Vue.js, especializada en la venta de neumáticos para camiones. Esta plataforma está diseñada para ofrecer una experiencia de compra sencilla y accesible, permitiendo a cualquier usuario adquirir neumáticos sin necesidad de iniciar sesión.',
         desc_finish:'Neumatruck proporciona una solución eficiente para la compra de neumáticos para camiones, combinando una tecnología avanzada con una interfaz de usuario sencilla y accesible para garantizar una experiencia de compra excepcional.',
-        img: 'images/proyectos/neumatruck.webp', 
+        img: ['images/proyectos/neumatruck.webp'], 
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_neumatruck.webp',
@@ -88,11 +91,12 @@ const lista = [
     },
     {
         id:4,
+        url_path:'neumaflotas',
         titulo:'Neumaflotas', 
         desc:'Software de gerenciamiento de flotas vehiculares',
         desc_large:'NeumaFlotas es un avanzado software desarrollado en Flutter, diseñado para la gestión y registro de mediciones de neumáticos con el fin de facilitar el control gerencial. Este software permite a los usuarios registrar datos críticos de los neumáticos y enviar la información recopilada a un backend para su almacenamiento y análisis.',
         desc_finish:'NeumaFlotas es la herramienta ideal para empresas que necesitan un sistema efectivo para gestionar las mediciones de neumáticos, mejorando la precisión en el control y mantenimiento de la flota mediante una solución tecnológica avanzada y fácil de usar.',
-        img: 'images/proyectos/neumaflotas.webp', 
+        img: ['images/proyectos/neumaflotas.webp'], 
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_neumaflotas.webp',
@@ -118,11 +122,12 @@ const lista = [
     },
     {
         id:5,
+        url_path:'premium-neumachile',
         titulo:'Premium Neumachile', 
         desc:'E-commerce para distribuidores de productos automotrices',
         desc_large:'premium.neumachile.cl es una plataforma de comercio electrónico avanzada, desarrollada en Angular con un backend en Lumen, especializada en la venta de productos vehiculares. Esta página ofrece una amplia gama de productos, incluyendo repuestos, aceites, neumáticos, baterías y más, para satisfacer las necesidades de los propietarios de vehículos y profesionales del sector.',
         desc_finish:'premium.neumachile.cl es la solución ideal para quienes buscan una plataforma de comercio electrónico confiable y completa para adquirir productos vehiculares de alta calidad, combinando tecnología avanzada con una experiencia de usuario superior.',
-        img: 'images/proyectos/premium.webp', 
+        img: ['images/proyectos/premium.webp'], 
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_premium.webp',
@@ -149,11 +154,12 @@ const lista = [
     },
     {
         id:6,
+        url_path:'neumaequipos',
         titulo:'Neumaequipos', 
         desc:'E-commerce de venta de productos para serviteca',
         desc_large:'NeumaEquipos.cl es una tienda en línea desarrollada en WordPress, especializada en la venta de productos para servitecas. Esta plataforma está diseñada para ofrecer una amplia gama de equipos y suministros esenciales para el mantenimiento y reparación de vehículos, proporcionando una solución completa y accesible para profesionales del sector.',
         desc_finish:'NeumaEquipos.cl proporciona una solución integral para servitecas que buscan una plataforma confiable para adquirir productos y equipos necesarios para su operación diaria, combinando la flexibilidad de WordPress con una experiencia de compra optimizada.',
-        img: 'images/proyectos/neumaequipos.webp', 
+        img: ['images/proyectos/neumaequipos.webp'], 
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_neumaequipos.webp',
@@ -178,11 +184,12 @@ const lista = [
     },
     {
         id:7,
+        url_path:'neumagenda',
         titulo:'Neumagenda', 
         desc:'Software para agendar y comunicación interna',
         desc_large:'NeumAgenda es una aplicación de software desarrollada en Flutter, diseñada para facilitar la programación y gestión de eventos y citas. Su objetivo principal es permitir a los usuarios agendar citas de cualquier tipo de manera sencilla y eficiente, a partir de los eventos y horarios designados por el administrador.',
         desc_finish:'NeumAgenda es la solución ideal para empresas y organizaciones que necesitan una herramienta confiable para gestionar agendas y citas, combinando la tecnología de Flutter con una experiencia de usuario intuitiva y eficiente.',
-        img: 'images/proyectos/neumagenda.webp', 
+        img: ['images/proyectos/neumagenda.webp'], 
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_neumagenda.webp',
@@ -207,11 +214,12 @@ const lista = [
     },
     {
         id:8,
+        url_path:'wolverchile',
         titulo:'wolverchile.cl', 
         desc:'Landing page respresentantes oficial en chile',
         desc_large:'Wolverchile.cl es una moderna landing page diseñada para presentar productos de manera atractiva y eficiente. Aunque no es una tienda en línea, su objetivo es conectar con el backend para mostrar un catálogo dinámico de productos. La página está optimizada para brindar una experiencia de usuario fluida y responsiva, adaptándose a cualquier dispositivo.',
         desc_finish:'Wolverchile.cl es un ejemplo de cómo integrar tecnologías modernas para crear sitios web rápidos, eficientes y fáciles de mantener, enfocados en la presentación visual de productos de manera profesional.',
-        img: 'images/proyectos/wolverchile.webp', 
+        img: ['images/proyectos/wolverchile.webp'], 
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_wolverchile.webp',
@@ -239,6 +247,7 @@ const lista = [
     },
     {
         id:9,
+        url_path:'cavaspaces',
         titulo:'cavaspaces.cl', 
         desc:'Landing page de cavaspaces.cl, arquitectura y diseño.',
         desc_large:'La landing page de cavaspaces, desarrollada con HTML y CSS, presenta un diseño limpio y moderno que destaca servicios de arquitectura y diseño. Es responsive, visualmente atractiva y ofrece una navegación clara para los usuarios.',
@@ -266,11 +275,12 @@ const lista = [
     },
     {
         id:10,
+        url_path:'nobitires',
         titulo:'Nobitires', 
         desc:'Nobitires es una aplicación móvil creada en Flutter que te ayuda a encontrar medidas de neumáticos alternativas para tu vehículo. Descubre rápidamente si un neumático diferente es viable para reemplazar el original y asegura una conducción segura y óptima',
         desc_large:'Nobitires es la solución perfecta para quienes buscan reemplazar sus neumáticos de manera informada y precisa. Nuestra app móvil, desarrollada en Flutter, permite ingresar las medidas del neumático actual y explorar alternativas compatibles que garantizan la seguridad y el rendimiento de tu vehículo. Con una interfaz sencilla y amigable, Nobitires es tu aliado ideal para tomar decisiones rápidas y acertadas al momento de cambiar tus neumáticos.',
         desc_finish:'Nobitires es una aplicación móvil intuitiva desarrollada en Flutter, diseñada para ayudarte a encontrar neumáticos alternativos compatibles con tu vehículo. Simplemente ingresa las medidas del neumático actual y Nobitires te mostrará otras opciones viables, garantizando seguridad y rendimiento en cada reemplazo. Ideal para quienes buscan tomar decisiones rápidas y bien fundamentadas al momento de cambiar sus neumáticos, Nobitires es tu herramienta confiable para mantener tu vehículo en óptimas condiciones.',
-        img: 'images/proyectos/nobitires.webp', 
+        img: ['images/proyectos/nobitires.webp'], 
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_nobitires.webp',
@@ -298,11 +308,12 @@ const lista = [
     },
     {
         id:11,
+        url_path:'agente-de-ventas-inteligente',
         titulo:'Agente de Ventas', 
         desc:'Agente de Ventas Inteligente es una aplicación potenciada con inteligencia artificial que optimiza y automatiza el proceso de ventas, ayudando a los equipos comerciales a mejorar su eficiencia y conversión de clientes.',
         desc_large:'Es un agente de ventas inteligente impulsado por inteligencia artificial, diseñado para optimizar la interacción con clientes y automatizar procesos comerciales. Gracias a su capacidad de análisis y aprendizaje, la aplicación recomienda productos, gestiona cotizaciones, agenda reuniones y realiza seguimientos automáticos, todo en un solo lugar.',
         desc_finish:'Con su asistente virtual integrado, los clientes reciben respuestas instantáneas y asesoramiento personalizado, mejorando la experiencia de compra y aumentando la tasa de conversión. Además, su sistema de análisis predictivo ayuda a los equipos de ventas a identificar oportunidades y tomar decisiones estratégicas basadas en datos reales.',
-        img: 'images/proyectos/agetnte-ventas.webp', 
+        img: ['images/proyectos/agetnte-ventas.webp',], 
         repo:null, 
         download:null, 
         logo:'images/proyectos/logo_agente_ventas.webp',
@@ -328,9 +339,9 @@ const lista = [
 ];
 
 // * retorna el proyecto segun su ID
-export const getProyectById = async (id:number):Promise<any> =>{
+export const getProyectById = async (url_path:string):Promise<any> =>{
     for (const proyect of lista) {
-        if (proyect.id == id) {
+        if (proyect.url_path == url_path) {
             return proyect;
         }
     }

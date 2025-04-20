@@ -252,7 +252,7 @@ const lista = [
         desc:'Landing page de cavaspaces.cl, arquitectura y diseño.',
         desc_large:'La landing page de cavaspaces, desarrollada con HTML y CSS, presenta un diseño limpio y moderno que destaca servicios de arquitectura y diseño. Es responsive, visualmente atractiva y ofrece una navegación clara para los usuarios.',
         desc_finish:'La landing page de cavaspaces es un proyecto diseñado con tecnologías HTML y CSS, enfocado en presentar de manera elegante y profesional los servicios de arquitectura y diseño que ofrece la marca.El sitio web cuenta con un diseño limpio y minimalista, destacando elementos visuales que reflejan creatividad y modernidad. Gracias a CSS, la página incorpora efectos de estilo atractivos, como tipografías personalizadas, colores armónicos y diseño responsive para adaptarse perfectamente a dispositivos móviles, tabletas y computadoras.La estructura HTML está cuidadosamente organizada, utilizando etiquetas semánticas para garantizar una buena experiencia de usuario y facilitar la navegación. Además, los contenidos están orientados a captar la atención de los visitantes, mostrando información clara sobre los servicios, proyectos realizados y la visión de CavaSpaces en el campo de la arquitectura y diseño.',
-        img: 'images/proyectos/cavaspaces.webp', 
+        img: ['images/proyectos/cavaspaces.webp'], 
         repo: null, 
         download:null, 
         logo: 'images/proyectos/logo_cavaspaces.webp',

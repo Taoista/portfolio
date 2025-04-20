@@ -1,11 +1,10 @@
 ---
 export interface Props {
   code: string;
-  language?: string;
   filename?: string;
 }
 
-const { code, language = 'javascript', filename = 'example.js' } = Astro.props;
+const { code,  filename = 'example.js' } = Astro.props;
 
 function highlightCode(code: string): string {
   // Implementación básica de resaltado de sintaxis

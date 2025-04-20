@@ -7,7 +7,7 @@ import Header from "../../components/HeaderSoftware.astro";
 import Layout from "../../layouts/LayoutSoftware.astro"
 
 import { getProyectById, getProyectos } from "../../services/proyectosController";
-
+// ? es el urlPath
 const { id } = Astro.params
 
 let proyectos
@@ -61,7 +61,7 @@ export function getStaticPaths() {
         <div class="col-twelve">
           <h2>Política de Privacidad</h2>
           <p class="lead">
-            <a href={`/politicas-privacidad/${id}`}>Ver</a>
+            <a href={`/politicas-privacidad/${proyectos.url_path}`}>Ver</a>
           </p>   			
         </div>:
         ''

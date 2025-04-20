@@ -13,7 +13,7 @@ const { id } = Astro.params
 let proyectos
 
 if(id){
-    proyectos =  await getProyectById(id);
+    proyectos =  await getProyectById(id.toString());
 }
 
 export function getStaticPaths() {
@@ -21,7 +21,7 @@ export function getStaticPaths() {
   const idProyects = getProyectos();
 
   return idProyects.map(idProyect => ({
-    params:{id :idProyect.id, title: idProyect.titulo,}
+    params:{id :idProyect.url_path, title: idProyect.titulo,}
   }))
   // return [
   //   {params: {id: 4}},

@@ -18,7 +18,7 @@ const proyectos = getProyectos().reverse()
     <ul class="cards">
         {
           proyectos.map((data) => (
-            <CardProyectos id={data.id} title={data.titulo} description={data.desc} 
+            <CardProyectos  title={data.titulo} description={data.desc} 
                           img={data.img[0]} repository={data.repo} download={data.download} 
                           logo={data.logo} url={data.url} tenology={data.tecnologies}  url_path={data.url_path}/>
           ))

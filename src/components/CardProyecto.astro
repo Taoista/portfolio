@@ -26,7 +26,7 @@ const {  title, description, img,repository, download, logo, url, tenology, url_
                         <h5 class="card__title">{title}</h5>            
                         <p class="card__tecnologies">Tecnología</p>            
                         {tenology.map((tec) => (
-                            <img style="max-width: 22px; display:inline-block" src={tec} alt="">
+                            <img class="img_tec" style="max-width: 22px; display:inline-block" src={tec} alt="">
                         ))}
                     </div>
                 </div>
@@ -59,19 +59,11 @@ body {
   background-color: #fef8f8;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 2rem;
-  margin: 4rem 5vw;
-  padding: 0;
-  list-style-type: none;
-}
+
 
 .card {
   position: relative;
   display: block;
-  height: 100%;  
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
@@ -168,4 +160,40 @@ body {
 .card__tecnologies{
     padding: 0 0 0 0;
 }
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+ .card__thumb {
+    display: none;
+ }
+ .card__tecnologies{
+  display: none;
+ }
+ .card__description{
+  display: none;
+ }
+ img.img_tec{
+  display: none;
+ }
+  // .card__header {
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  // }
+
+  // .card__thumb {
+  //   margin-bottom: 0.5rem;
+  // }
+
+  // .card__description, .card__tecnologies {
+  //   padding: 0 1em 1em;
+  //   font-size: 0.85rem;
+  // }
+
+  // .card__title {
+  //   font-size: 1rem;
+  // }
+}
+
 </style>

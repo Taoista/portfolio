@@ -4,7 +4,7 @@ import CardVideos from "./CardVideos.astro";
 import { getVideos } from '../services/videosController';
 
 
-const videoYoutube = getVideos()
+const videoYoutube = getVideos().reverse();
 ---
 
 <section id="portfolio">

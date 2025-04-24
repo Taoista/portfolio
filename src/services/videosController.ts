@@ -87,8 +87,38 @@ const videos = [
             'ssh -T git@github.com',
             'eval "$(ssh-agent -s)"',
         ]
+    },
+    {
+        id:5,
+        title: 'Desplegar Astro en Vercel con GitHub',
+        publicacion:'23 de Abril 2025',
+        descripcion:'En este video se explica, paso a paso, cómo desplegar una página web creada con Astro utilizando Git, GitHub y la plataforma Vercel. El objetivo es mostrar de forma clara y sencilla el proceso completo de despliegue, desde la creación del proyecto hasta su publicación en línea, utilizando herramientas modernas y gratuitas.',
+        url: 'https://www.youtube.com/embed/VyoaF6xwSJc?si=nYkZ3OFreYNBfHts',
+        img: 'https://i.ibb.co/bgYkH8tT/Miniatura-Youtube-Producto-Impactante-Fotogr-fico-Rojo-y-Amarillo.png',
+        type:'tutorial',
+        repositorio:null,
+        temas: [
+            // '1. Configuración en Windows',
+            // '2. Descargar Git y crear cuenta en GitHub',
+            // '3. Configurar Git en máquina local',
+            // '4. Crear repositorio',
+            // '5. Primer push'
+        ],
+        comandos: [
+            // 'git config --global user.name "tu nombre"',
+            // 'git config --global user.email "tu correo"',
+            // 'git config --list',
+            // 'ssh-keygen -t, rsa -b 4096 -C "tu correo"',
+            // 'cat ~/.ssh/id_rsa.pub',
+            // 'cat ~/.ssh/id_rsa',
+            // 'ssh -T git@github.com',
+            // 'eval "$(ssh-agent -s)"',
+        ]
     }
 ];
+
+
+
 
 export const getVideos = () =>{
     return videos;

@@ -1,26 +1,25 @@
 ---
-import { getProyectos } from '../services/proyectosController'
 
-import  CardProyectos from '../components/CardProyecto.astro'
+import { getPosts } from '../services/post';
+import CardPosts from './CardPosts.astro';
 
-const proyectos = getProyectos().reverse()
+const posts = getPosts().reverse();
 ---
 
 <section id="portfolio">
 
     <div class="row section-intro">
         <div class="col-twelve">
-            <h5>Portfolio</h5>
-            <h1>Mis trabajos.</h1>
+            <h5>Posts</h5>
+            <h1>Notas y Posts.</h1>
         </div>   		
     </div> <!-- /section-intro--> 
 
     <ul class="cards">
         {
-          proyectos.map((data) => (
-            <CardProyectos  title={data.titulo} description={data.desc} 
-                          img={data.img[0]} repository={data.repo} download={data.download} 
-                          logo={data.logo} url={data.url} tenology={data.tecnologies}  url_path={data.url_path}/>
+          posts.map((data) => (
+            <CardPosts  title={data.title} description={data.descripcion[0]} 
+                          img={data.img} url={data.url} fecha={data.fecha}  />
           ))
         }
     </ul>

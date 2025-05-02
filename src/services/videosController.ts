@@ -114,6 +114,32 @@ const videos = [
             // 'ssh -T git@github.com',
             // 'eval "$(ssh-agent -s)"',
         ]
+    },
+    {
+        id:6,
+        title: 'Agente de venta con Angular IA',
+        publicacion:'02 de Mayo 2025',
+        descripcion:'¿Te imaginas tener un vendedor que trabaje 24/7? En este video te enseño cómo crear un asistente de ventas con inteligencia artificial',
+        url: 'https://www.youtube.com/embed/_bLvsw-boz8?si=Vr9N7LhEQR1h1RkP',
+        img: 'https://i.ibb.co/08wQJQ1/Copia-de-Shocking-moments-Your-Story-Miniatura-de-You-Tube.png',
+        type:'tutorial',
+        repositorio:null,
+        temas: [
+            '1. Testeo en entorno de prueba',
+            '2. Integración con ChatGPT-3',
+            '3. Base de datos Google Sheets',
+            '4. Prueba en producción',
+        ],
+        comandos: [
+            // 'npm create astro@latest',
+            // 'nombre de tu proyecto web',
+            // 'git remote add orgigin "link del repositorio"',
+            // 'git push origin master',
+            // 'cat ~/.ssh/id_rsa.pub',
+            // 'cat ~/.ssh/id_rsa',
+            // 'ssh -T git@github.com',
+            // 'eval "$(ssh-agent -s)"',
+        ]
     }
 ];
 

@@ -140,6 +140,32 @@ const videos = [
             // 'ssh -T git@github.com',
             // 'eval "$(ssh-agent -s)"',
         ]
+    },
+    {
+        id:7,
+        title: '01 Laravel - que es laravel',
+        publicacion:'03 de Mayo 2025',
+        descripcion:'',
+        url: 'https://www.youtube.com/embed/_bLvsw-boz8?si=Vr9N7LhEQR1h1RkP',
+        img: 'https://i.ibb.co/Xk5Gkf4s/1.jpg',
+        type:'curso',
+        repositorio:null,
+        temas: [
+            '1. ¿Qué es Laravel?',
+            '2. ¿Por qué usar Laravel?',
+            '3. ¿Quién usa Laravel?',
+            '4. ¿Cómo se puede usar Laravel?',
+        ],
+        comandos: [
+            // 'npm create astro@latest',
+            // 'nombre de tu proyecto web',
+            // 'git remote add orgigin "link del repositorio"',
+            // 'git push origin master',
+            // 'cat ~/.ssh/id_rsa.pub',
+            // 'cat ~/.ssh/id_rsa',
+            // 'ssh -T git@github.com',
+            // 'eval "$(ssh-agent -s)"',
+        ]
     }
 ];
 
